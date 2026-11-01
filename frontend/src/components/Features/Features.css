@@ -1,0 +1,230 @@
+
+.features-section {
+  padding: 30px 4% 55px;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(15, 55, 105, 0.12), transparent 70%),
+    #080f1d;
+}
+
+.features-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Core Features Heading */
+
+.features-heading,
+.how-heading {
+  text-align: center;
+}
+
+.features-heading {
+  margin-bottom: 38px;
+}
+
+.features-heading h2,
+.how-heading h2 {
+  color: #f8fafc;
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -1px;
+}
+
+.features-heading h2 span,
+.how-heading h2 span {
+  color: #3b82f6;
+}
+
+.features-heading p,
+.how-heading p {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/* Feature Cards */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  min-height: 190px;
+  padding: 20px 25px;
+  border: 1px solid;
+  border-radius: 17px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  margin-bottom: 12px;
+}
+
+.feature-card h3 {
+  color: #f8fafc;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.feature-card p {
+  color: #e2e8f0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* Blue Card */
+
+.feature-card.blue {
+  background: linear-gradient(135deg, #102747, #0c1b31);
+  border-color: #269bff;
+  box-shadow: inset 0 0 20px rgba(38, 155, 255, 0.07);
+}
+
+.blue .feature-icon {
+  color: #55b5ff;
+}
+
+/* Purple Card */
+
+.feature-card.purple {
+  background: linear-gradient(135deg, #292044, #17172f);
+  border-color: #9871ff;
+  box-shadow: inset 0 0 20px rgba(152, 113, 255, 0.07);
+}
+
+.purple .feature-icon {
+  color: #a78bfa;
+}
+
+/* Teal Card */
+
+.feature-card.teal {
+  background: linear-gradient(135deg, #103b3c, #102528);
+  border-color: #27d6c2;
+  box-shadow: inset 0 0 20px rgba(39, 214, 194, 0.07);
+}
+
+.teal .feature-icon {
+  color: #4de4d1;
+}
+
+/* Orange Card */
+
+.feature-card.orange {
+  background: linear-gradient(135deg, #38291f, #211d1c);
+  border-color: #f59e50;
+  box-shadow: inset 0 0 20px rgba(245, 158, 80, 0.07);
+}
+
+.orange .feature-icon {
+  color: #fb923c;
+}
+
+/* Feature Hover Effects */
+
+.feature-card.blue:hover {
+  box-shadow: 0 0 25px rgba(38, 155, 255, 0.18);
+}
+
+.feature-card.purple:hover {
+  box-shadow: 0 0 25px rgba(152, 113, 255, 0.18);
+}
+
+.feature-card.teal:hover {
+  box-shadow: 0 0 25px rgba(39, 214, 194, 0.18);
+}
+
+.feature-card.orange:hover {
+  box-shadow: 0 0 25px rgba(245, 158, 80, 0.18);
+}
+
+/* How It Works */
+
+.how-heading {
+  margin: 60px 0 25px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 35px;
+}
+
+.step-wrapper {
+  position: relative;
+}
+
+.step-card {
+  min-height: 165px;
+  padding: 18px;
+  text-align: center;
+  border: 1px solid #285b89;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #14263b, #0d192b);
+  transition: 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: #60a5fa;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.step-card svg {
+  color: #60a5fa;
+  margin: 0 auto 10px;
+}
+
+.step-card h3 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.step-card p {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.step-arrow {
+  position: absolute;
+  right: -30px;
+  top: 42%;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .features-grid,
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-section {
+    padding: 60px 6%;
+  }
+
+  .features-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-heading h2,
+  .how-heading h2 {
+    font-size: 29px;
+  }
+}
