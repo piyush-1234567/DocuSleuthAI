@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 from app.database import engine
+from app.models.user import User
+from app.database import Base, engine
 
 
+Base.metadata.create_all(bind=engine)
 app = FastAPI(title="DocuSleuth AI API")
 
 @app.get("/")
